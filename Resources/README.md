@@ -5,6 +5,8 @@ Making a personal website and putting everything in here
 ### Links:
 - Color Variables:
     - https://www.havardbrynjulfsen.design/writing/color-variable-names-in-css
+- Github Pages
+    - https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
 
 
 ### Color Palette:
