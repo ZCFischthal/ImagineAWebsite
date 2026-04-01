@@ -5,8 +5,12 @@ Making a personal website and putting everything in here
 ### Links:
 - Color Variables:
     - https://www.havardbrynjulfsen.design/writing/color-variable-names-in-css
-- Github Pages
+- My Fonts:
+    - https://neocities.org/dashboard?dir=fonts
+- Github Pages:
     - https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+- On Click Links:
+    - https://www.willmaster.com/library/features/links-without-html-a-tags.php
 
 
 ### Color Palette:
@@ -18,7 +22,7 @@ Making a personal website and putting everything in here
 - #09814A Sea Green
 - #FAD8D6 Soft Blush
 
-### Fonts:
+### Fonts: (accessed with "src: url(https://fischthal.neocities.org/fonts/Nada.ttf);" in css)
 - fenixFont | FENIXHEA.TTF | Header 1 /My Name
 - nadaFont | Nada.ttf | Other headers
 - serif | everything else

@@ -18,36 +18,51 @@
 /* Fonts */
 @font-face {
     font-family: fenixFont;
-    src: url(/Resources/Fonts/FENIXHEA.TTF);
+    src: url(https://fischthal.neocities.org/fonts/FENIXHEA.TTF);
 }
 @font-face {
     font-family: nadaFont;
-    src: url(/Resources/Fonts/Nada.ttf);
+    src: url(https://fischthal.neocities.org/fonts/Nada.ttf);
 }
 
+/* Text */
 html{
     background-color: var(--primary-bg-color);
     color: var(--onyx);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* Headers */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     font-family: fenixFont;
+    color: var(--fuchsiaFlame);
+    font-size: 3em;
+    padding: 0;
+    text-shadow: 0 0 4px var(--onyx);
 }
 
 h2 {
     font-family: nadaFont;
 }
 
+.note {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+    text-decoration: overline underline;
+    padding: 5%;
+}
+
+
+
 /* Links */
-a:link{
-    color: var(--springGreen);
-}
-
-a:visited{
-    color: var(--emeraldGreen);
-}
-
 a:hover{
     color: var(--fuchsiaFlame);
 }
@@ -58,12 +73,27 @@ a:active{
 
 /* Topnav */
 .topnav {
-    overflow: hidden;
     background-color: var(--contrast-2);
+    display: block;
+    line-height: 1em;
+    text-align: center;
+    overflow: hidden;
+    position: sticky;
 }
 
 .topnav a {
     float: left;
+    display: block;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+    color: var(--onyx);
+}
+
+.topnav .activesplit {
+    background-color: var(--fuchsiaFlame);
+    color: white;
+    float: right;
     display: block;
     text-align: center;
     padding: 1em 1em;
@@ -80,9 +110,77 @@ a:active{
 
 .topnav a:hover {
     background-color: var(--primary-bg-color);
+    color: var(--fuchsiaFlame);
 }
 
 .topnav .active {
     background-color: var(--fuchsiaFlame);
-    color: var(--amberFlame);
+    color: white;
+}
+
+.topnav .center{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    vertical-align: -170%;
+    line-height: inherit;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--contrast-2);
+    text-align: center;
+}
+
+
+
+.othernav {
+    background-color: var(--fuchsiaFlame);
+    display: flex;
+    align-items: stretch;
+    font-size: xx-large;
+    justify-content: center;
+}
+
+.othernav a {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    color: var(--onyx);
+    padding: 1em;
+    flex-grow: 1;
+}
+
+.othernav .active {
+    background-color: var(--primary-bg-color);
+    font-family: fenixFont;
+    flex-grow: 3;
+    font-size: 4em;
+    padding: 0em;
+}
+
+/* Containers */
+.flex-container-container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+@media screen and (min-width: 900px) {
+    .flex-container {
+                display: flex;
+                align-items: stretch;
+                gap: 20px;
+                height: inherit;
+                height: calc(10vw + 15vh);
+                width: auto;
+                container-type: inline-size;         
+    }
+
+    .scaling-text {
+        font-size: calc(1cqw + 1cqh);
+    }
 }
