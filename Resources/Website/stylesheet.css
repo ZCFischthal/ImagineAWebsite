@@ -1,0 +1,88 @@
+/* Colors */
+
+:root {
+    --onyx: #0D160B;
+    --fuchsiaFlame: #E4007C;
+    --amberFlame: #FFB20F;
+    --springGreen: #27FB6B;
+    --emeraldGreen: #23CE6B;
+    --seaGreen: #09814A;
+    --softBlush: #FAD8D6;
+
+    --primary-bg-color: var(--softBlush);
+    --contrast-1: var(--fuchsiaFlame);
+    --contrast-2: var(--amberFlame);
+    --contrast-3: var(--emeraldGreen);
+}
+
+/* Fonts */
+@font-face {
+    font-family: fenixFont;
+    src: url(/Resources/Fonts/FENIXHEA.TTF);
+}
+@font-face {
+    font-family: nadaFont;
+    src: url(/Resources/Fonts/Nada.ttf);
+}
+
+html{
+    background-color: var(--primary-bg-color);
+    color: var(--onyx);
+}
+
+/* Headers */
+h1 {
+    font-family: fenixFont;
+}
+
+h2 {
+    font-family: nadaFont;
+}
+
+/* Links */
+a:link{
+    color: var(--springGreen);
+}
+
+a:visited{
+    color: var(--emeraldGreen);
+}
+
+a:hover{
+    color: var(--fuchsiaFlame);
+}
+
+a:active{
+    color: var(--fuchsiaFlame);
+}
+
+/* Topnav */
+.topnav {
+    overflow: hidden;
+    background-color: var(--contrast-2);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5% 5%;
+    text-decoration: none;
+}
+
+.topnav .split {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 5% 5%;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: var(--primary-bg-color);
+}
+
+.topnav .active {
+    background-color: var(--fuchsiaFlame);
+    color: var(--amberFlame);
+}
