@@ -4,17 +4,16 @@
     --onyx: #0D160B;
     --fuchsiaFlame: #E4007C;
     --amberFlame: #FFB20F;
-    --amberLight: #ffb30f2b;
     --springGreen: #27FB6B;
     --emeraldGreen: #23CE6B;
     --seaGreen: #05512f;
     --softBlush: #FAD8D6;
 
-    --primary-bg-color: var(--softBlush);
+    --primary-bg-color: var(--onyx);
     --contrast-1: var(--fuchsiaFlame);
-    --contrast-2: var(--amberFlame);
+    --contrast-2: var(--seaGreen);
     --contrast-3: var(--emeraldGreen);
-    --text-color: var(--onyx);
+    --text-color: var(--springGreen);
 }
 
 /* Fonts */
@@ -22,9 +21,18 @@
     font-family: fenixFont;
     src: url(https://fischthal.neocities.org/FreeFonts/FENIXHEA.TTF);
 }
+@font-face {
+    font-family: nadaFont;
+    src: url(https://fischthal.neocities.org/FreeFonts/alagard.ttf);
+}
+@font-face {
+    font-family: arcadeFont;
+    src: url(https://fischthal.neocities.org/FreeFonts/Minecraft.ttf);
+}
 
 /* Text */
 html{
+    font-family: arcadeFont;
     background-color: var(--primary-bg-color);
     color: var(--text-color);
     box-sizing: border-box;
@@ -38,18 +46,27 @@ body {
 }
 
 h1 {
-    font-family: fenixFont;
     color: var(--contrast-1);
     font-size: 3em;
     padding: 0;
     text-shadow: 0 0 4px var(--text-color);
 }
 
-p {
-    padding: 0 1%;
-    text-indent: 1em;
+h2 {
+    font-family: arcadeFont;
+    text-align: center;
+    font-size: 5em;
+    padding: 0;
+    color: var(--contrast-1);
+    text-shadow: 0 0 8px var(--text-color);
 }
 
+p {
+    font-family: monospace;
+    text-indent: 1em;
+    font-size: large;
+    text-shadow: 0 0 15px var(--contrast-1);
+}
 
 .note {
     font-size: xx-large;
@@ -59,6 +76,7 @@ p {
     text-decoration: overline underline;
     padding: 5%;
 }
+
 
 
 /* Links */
@@ -71,7 +89,6 @@ a:active{
 }
 
 /* Topnav */
-
 .topnav {
     /* position: sticky; */
     top: 0;
@@ -99,12 +116,6 @@ a:active{
     float: right;
 }
 
-.topnav .activeSplit {
-    background-color: var(--primary-bg-color);
-    color: var(--text-color);
-    float: right;
-}
-
 .topnav .center{
     margin-top: auto;
     margin-bottom: auto;
@@ -117,19 +128,15 @@ a:active{
 
 .dropdown {
     float: left;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .dropdown .dropbtn {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 1em 1em;
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: inherit;
+    font-size: 17px;
     border: none;
     outline: none;
+    /* color: white; */
+    padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -138,8 +145,8 @@ a:active{
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 3em;
     background-color: var(--contrast-2);
+    /* min-width: 160px; */
     box-shadow: 0px 8px 16px 0px var(--contrast-1);
     z-index: 1;
 }
@@ -167,7 +174,6 @@ a:active{
   display: block;
 }
 
-
 /* Footer */
 .footer {
     position: fixed;
@@ -176,8 +182,6 @@ a:active{
     width: 100%;
     background-color: var(--contrast-2);
     text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -186,7 +190,6 @@ a:active{
     margin-left: 10%;
     margin-right: 10%;
 }
-
 @media screen and (min-width: 900px) {
     .flex-container {
                 display: flex;
@@ -202,57 +205,3 @@ a:active{
         font-size: calc(1cqw + 1cqh);
     }
 }
-
-/* Contact Form */
-.contact-form-container {
-    align-items: center;
-    background-color: var(--contrast-2);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px var(--contrast-1);
-    max-width: 600px;
-    width: 100%;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-.col-sm-12 {
-    background-color: var(--seaGreen);
-}
-
-input, textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 2px solid var(--seaGreen);
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 1rem;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: var(--primary-bg-color);
-}
-
-.error-message {
-    color: red;
-    font-size: 0.875rem;
-    display: none; /* Hidden by default */
-}
-
-.btn-primary {
-    background-color: var(--contrast-1);
-    color: white;
-    border: none;
-    padding: 0.75rem;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-family: 'Times New Roman', Times, serif;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: var(--seaGreen);
-}
-

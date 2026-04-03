@@ -11,6 +11,13 @@ Making a personal website and putting everything in here
     - https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
 - On Click Links:
     - https://www.willmaster.com/library/features/links-without-html-a-tags.php
+- Dropdown:
+    - https://www.geeksforgeeks.org/html/html-dropdown/
+- Contact Form
+    - https://www.geeksforgeeks.org/php/simple-contact-form-using-html-css-and-php/
+    - https://www.phptutorial.net/php-tutorial/php-contact-form/
+    - https://www.geeksforgeeks.org/javascript/create-a-contact-form-using-html-css-javascript/
+    - https://dev.to/mertcanyucel/how-to-create-a-simple-html-form-that-sends-you-an-email-1mbd
 
 
 ### Color Palette:
@@ -25,6 +32,7 @@ Making a personal website and putting everything in here
 ### Fonts: (accessed with "src: url(https://fischthal.neocities.org/fonts/Nada.ttf);" in css)
 - fenixFont | FENIXHEA.TTF | Header 1 /My Name
 - nadaFont | Nada.ttf | Other headers
+- arcadeFont | arcade.ttf | game site
 - serif | everything else
 
 ### Photos:
@@ -60,8 +68,9 @@ Making a personal website and putting everything in here
     - show contact me form here, too?
 
 #### Music Page
-- Header under the main header with an option for Games or Theater
-    - Autoselect Games
+- ~~Header under the main header with an option for Games or Theater
+    - Autoselect Games~~
+- CHANGED MY MIND — want a dropdown in the top nav instead
 ### Games
 - Longer bio about games stuff (bio written out below)
     - What about games sound I like
