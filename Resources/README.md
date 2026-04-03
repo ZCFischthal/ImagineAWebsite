@@ -1,6 +1,11 @@
 # README
 Making a personal website and putting everything in here
 
+## Notes
+Replace the text of my name with an image/logo
+Do some actual stuff for the footer
+Fill all the pages
+
 ## Resources
 ### Links:
 - Color Variables:

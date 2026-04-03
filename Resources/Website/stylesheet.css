@@ -20,7 +20,7 @@
 /* Fonts */
 @font-face {
     font-family: fenixFont;
-    src: url(https://fischthal.neocities.org/FreeFonts/FENIXHEA.TTF);
+    src: url(https://fischthal.neocities.org/FreeFonts/FENIXHEA.TTF) format("truetype");
 }
 
 /* Text */
@@ -40,7 +40,7 @@ body {
 h1 {
     font-family: fenixFont;
     color: var(--contrast-1);
-    font-size: 3em;
+    font-size: 2.5em;
     padding: 0;
     text-shadow: 0 0 4px var(--text-color);
 }
@@ -112,8 +112,7 @@ a:active{
     line-height: inherit;
     overflow: clip;
     @media screen and (max-width: 600px){
-        font-size: x-large;
-        margin-top: 0.5em;
+        display: none;
     }
 }
 
