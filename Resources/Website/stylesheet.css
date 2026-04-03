@@ -110,8 +110,10 @@ a:active{
     margin-bottom: auto;
     display: inline-block;
     line-height: inherit;
+    overflow: clip;
     @media screen and (max-width: 600px){
-        display: none;
+        font-size: x-large;
+        margin-top: 0.5em;
     }
 }
 
@@ -218,10 +220,6 @@ a:active{
     margin-bottom: 1rem;
 }
 
-.col-sm-12 {
-    background-color: var(--seaGreen);
-}
-
 input, textarea {
     width: 100%;
     padding: 0.8rem;
@@ -231,12 +229,6 @@ input, textarea {
     font-size: 1rem;
     font-family: 'Times New Roman', Times, serif;
     background-color: var(--primary-bg-color);
-}
-
-.error-message {
-    color: red;
-    font-size: 0.875rem;
-    display: none; /* Hidden by default */
 }
 
 .btn-primary {

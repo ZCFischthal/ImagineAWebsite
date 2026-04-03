@@ -14,6 +14,9 @@ Making a personal website and putting everything in here
 - Dropdown:
     - https://www.geeksforgeeks.org/html/html-dropdown/
 - Contact Form
+    - https://stackoverflow.com/questions/6077054/old-google-form-redirect-after-submission
+    - https://stefano.brilli.me/google-forms-html-exporter/?ref=mrinalcs.github.io
+    - https://mrinalcs.github.io/submit-html-form-to-google-form
     - https://www.geeksforgeeks.org/php/simple-contact-form-using-html-css-and-php/
     - https://www.phptutorial.net/php-tutorial/php-contact-form/
     - https://www.geeksforgeeks.org/javascript/create-a-contact-form-using-html-css-javascript/

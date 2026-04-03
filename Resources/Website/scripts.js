@@ -1,54 +1,22 @@
 // scripts.js
+// This script requires jQuery and jquery-form plugin
+// You can use these ones from Cloudflare CDN:
+// <scriptsrc="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
 
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault();
 
-    // Clear previous errors
-    const errorElements = document.querySelectorAll('.error-message');
-    errorElements.forEach(el => el.style.display = 'none');
-
-    // Get form values
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    // Validation flags
-    let isValid = true;
-
-    // Name validation
-    if (name === '') {
-        document.getElementById('nameError').textContent = 'Name is required';
-        document.getElementById('nameError').style.display = 'block';
-        isValid = false;
-    }
-
-    // Email validation
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email === '' || !emailPattern.test(email)) {
-        document.getElementById('emailError').textContent = 'Valid email is required';
-        document.getElementById('emailError').style.display = 'block';
-        isValid = false;
-    }
-
-    // Phone validation
-    const phonePattern = /^[0-9]{10}$/;
-    if (phone === '' || !phonePattern.test(phone)) {
-        document.getElementById('phoneError').textContent = 'Valid phone number is required';
-        document.getElementById('phoneError').style.display = 'block';
-        isValid = false;
-    }
-
-    // Message validation
-    if (message === '') {
-        document.getElementById('messageError').textContent = 'Message is required';
-        document.getElementById('messageError').style.display = 'block';
-        isValid = false;
-    }
-
-    // If form is valid, you can submit it or perform any other action
-    if (isValid) {
-        alert('Form submitted successfully!');
-        // You can also submit the form here using AJAX or similar methods
-    }
-});
+$('#bootstrapForm').submit(function (event) {
+    event.preventDefault()
+    var extraData = {}
+    $('#bootstrapForm').ajaxSubmit({
+        data: extraData,
+        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+        error: function () {
+            // Submit of form should be successful but JSONP callback will fail because Google Forms
+            // does not support it, so this is handled as a failure.
+            // alert('Form Submitted. Thanks.')
+            // You can also redirect the user to a custom thank-you page:
+            window.location = './thanks.html'
+        }
+    })
+})
