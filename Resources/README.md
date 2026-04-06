@@ -119,4 +119,4 @@ Zoe also attends as many live productions as she can! From professional to high 
 
 
 #### Contact Page
-- Contact page per w3schools lol
+- Contact page

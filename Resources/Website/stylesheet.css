@@ -1,10 +1,11 @@
 /* Colors */
 
 :root {
+    /* PALETTES */
+    /* pink-green*/
     --onyx: #0D160B;
     --fuchsiaFlame: #E4007C;
     --amberFlame: #FFB20F;
-    --amberLight: #ffb30f2b;
     --springGreen: #27FB6B;
     --emeraldGreen: #23CE6B;
     --seaGreen: #05512f;
@@ -13,8 +14,42 @@
     --primary-bg-color: var(--softBlush);
     --contrast-1: var(--fuchsiaFlame);
     --contrast-2: var(--amberFlame);
-    --contrast-3: var(--emeraldGreen);
+    --contrast-3: var(--seaGreen);
     --text-color: var(--onyx);
+    --alternate-text-1: var(--onyx);
+    --alternate-text-2: white;
+
+    /* Coffee */
+    /* --darkCoffee: #28190E;
+    --deepWalnut: #513C2C;
+    --wisteria: #B49FCC;
+    --camel: #C4A381;
+    --pearlAqua: #99E1D9;
+
+    --primary-bg-color: var(--camel);
+    --contrast-1: var(--wisteria);
+    --contrast-2: var(--deepWalnut);
+    --contrast-3: var(--pearlAqua);
+    --text-color: var(--darkCoffee);
+    --alternate-text-1: white;
+    --alternate-text-2: var(--darkCoffee); */
+
+    /* Red */
+    /* --nightBordeaux: #3C0919;
+    --burgundy: #7D1128;
+    --cherry: #C41E3D;
+    --softBlush: #FAD8D6;
+
+    --primary-bg-color: var(--nightBordeaux);
+    --contrast-1: var(--cherry);
+    --contrast-2: var(--burgundy);
+    --contrast-3: var(--cherry);
+    --text-color: var(--softBlush);
+    --alternate-text-1: var(--softBlush);
+    --alternate-text-2: --nightBordeaux; */
+
+
+    
 }
 
 /* Fonts */
@@ -62,12 +97,19 @@ p {
 
 
 /* Links */
+a {
+    color: var(--contrast-2);
+}
 a:hover{
     color: var(--contrast-1);
 }
 
 a:active{
     color: var(--contrast-1);
+}
+
+a:visited {
+    color: var(--contrast-3);
 }
 
 /* Topnav */
@@ -87,12 +129,12 @@ a:active{
     text-align: center;
     padding: 1em 1em;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--alternate-text-1);
 }
 
 .active {
-    background-color: var(--primary-bg-color);
     color: var(--text-color);
+    background-color: var(--primary-bg-color);
 }
 
 .topnav .split {
@@ -127,7 +169,7 @@ a:active{
     text-align: center;
     padding: 1em 1em;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--alternate-text-1);
     font-size: inherit;
     border: none;
     outline: none;
@@ -147,7 +189,7 @@ a:active{
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: var(--alternate-text-1);
   padding: 1em 1em;
   text-decoration: none;
   display: block;
@@ -156,12 +198,12 @@ a:active{
 
 .topnav a:hover, .dropdown:hover .dropbtn {
   background-color: var(--contrast-1);
-  color: white;
+  color: var(--alternate-text-1);
 }
 
 .dropdown-content a:hover {
   background-color: var(--contrast-1);
-  color: white;
+  color: var(--alternate-text);
 }
 
 .dropdown:hover .dropdown-content {
@@ -222,7 +264,7 @@ a:active{
 input, textarea {
     width: 100%;
     padding: 0.8rem;
-    border: 2px solid var(--seaGreen);
+    border: 2px solid var(--contrast-3);
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 1rem;
@@ -232,7 +274,7 @@ input, textarea {
 
 .btn-primary {
     background-color: var(--contrast-1);
-    color: white;
+    color: var(--alternate-text-1);
     border: none;
     padding: 0.75rem;
     border-radius: 4px;
@@ -244,6 +286,6 @@ input, textarea {
 }
 
 .btn-primary:hover {
-    background-color: var(--seaGreen);
+    background-color: var(--contrast-3);
 }
 
