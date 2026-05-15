@@ -4,19 +4,23 @@
 <title>Home</title>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link href="./Resources/stylesheet2.css" rel="stylesheet"/>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Mystery+Quest&display=swap');
-</style>
+<link href="./Resources/Website/stylesheet.css" rel="stylesheet"/>
 </head>
-<h1>Zoe Fischthal</h1>
-<div class="header">
-    <div class="headerImage">
-    <a href="./index.html">Home</a>
-    <a href="./music.html">Music</a>
-    <a href="./about.html">About</a>
-    <a href="./contact.html" class="split active">Contact</a>
-</div></div>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Music
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./gamesMusic.html">Games</a>
+                <a href="./theaterMusic.html">Theater</a>
+            </div>
+        </div>
+        <h1 class="center" onclick="location.href='./index.html'">Zoe Fischthal</h1>
+        <a href="./contact.html" class="activeSplit">Contact</a>
+    </div>
 
 <!-- FORM -->
     <div style="padding: 5% 1%; display: flex; justify-content: center; align-items: center;">
@@ -71,5 +75,10 @@ onsubmit="submitted=true;">
         </div>
     <script src="./scripts.js"></script>        
     </div>
+
+    <!-- Footer -->
+        <div class="footer">
+            <p>Footer</p>
+        </div>
 </body>
 </html>

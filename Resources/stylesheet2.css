@@ -1,0 +1,186 @@
+/* 
+--primary: #000;
+    --secondary: #006D77;
+    --accent: #DEE2FF;
+    --text-primary: #FEEAFA;
+    --text-secondary: #FEEAFA;
+--primary: #BDA6CE;
+--secondary: #ade9e3;
+--accent: #3B429F;
+--text-primary: #3B429F;
+--text-secondary: #7158c4;
+#006D77
+#B4D3D9
+#BDA6CE
+#9B8EC7
+#F2EAE0
+*/
+
+:root {
+    --primary: rgb(94, 84, 142);
+    --secondary: black;
+    --accent: aquamarine;
+    --text-primary: MistyRose;
+    --text-secondary: MistyRose;
+}
+
+.matemasie-regular {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: monospace;
+    background-color: var(--secondary);
+    color: var(--text-secondary);
+    text-shadow: 0px 0px 2px var(--primary);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Matemasie;
+    mix-blend-mode: screen;
+    color: var(--secondary);
+    text-align: center;
+    text-shadow: -2px -2px 4px var(--text-primary), 2px 2px 2px var(--accent);
+    font-size: 6rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+a, a:visited {
+    color: var(--accent);
+}
+
+a:hover {
+    text-shadow: 0px 0px 2px var(--accent), 1px 1px 20px var(--accent),1px -1px 20px var(--accent), -1px 1px 20px var(--accent);
+    /* box-shadow: 0px 0px 10px 5px var(--accent), inset 0px 0px 10px 5px var(--accent);
+    background: var(--secondary); */
+}
+
+
+iframe {
+    aspect-ratio: 16/9;
+    border: thick ridge var(--text-secondary);
+}
+
+
+/* HEADER */
+.headerImage {
+    background-image: url("./Photos/arcade_carpet_3_512.png");
+    display: block;
+    overflow: hidden;
+    position: sticky;
+    mix-blend-mode: screen;
+}
+.header {
+    background: var(--primary);
+     mix-blend-mode: hard-light;
+    color: var(--text-primary);
+    top: 0;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.5rem;
+    position: sticky;
+}
+
+.header .active {
+    background-color: var(--secondary);
+    mix-blend-mode: normal;
+    color: var(--text-secondary);
+}
+
+.header .split {
+    float: right;
+}
+
+.header a {
+    background-color: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: hard-light;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-shadow: 0px 0px 1px var(--accent);
+    box-shadow: 0px 0px 10px 5px var(--accent), inset 0px 0px 10px 5px var(--accent);
+    background: var(--secondary);
+}
+
+
+.box {
+    padding: 5%;
+    text-align: center;
+    justify-content: center;
+}
+
+.basic-button {
+    font-family: Matemasie;
+    padding: .5rem .5rem;
+    color: var(--accent);
+    font-size: 2rem;
+    border: ridge var(--accent);
+    display: inline-block;
+}
+
+.basic-button:hover {
+    box-shadow: 0px 0px 10px 5px var(--accent), inset 0px 0px 10px 5px var(--accent);
+}
+
+/* Contact Form */
+.contact-form-container {
+    align-items: center;
+    background-color: var(--primary);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px var(--accent);
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--secondary);
+}
+
+.btn-primary {
+    background-color: none;
+    color: var(--accent);
+    border: ridge var(--accent);
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    box-shadow: 0px 0px 10px 5px var(--accent), inset 0px 0px 10px 5px var(--accent);
+}
+

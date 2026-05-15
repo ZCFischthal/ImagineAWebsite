@@ -10,6 +10,7 @@ Fill all the pages
 ### Links:
 - Color Variables:
     - https://www.havardbrynjulfsen.design/writing/color-variable-names-in-css
+    - https://ssnull.com/articles/frontend-code/color-palettes-with-sass
 - My Fonts:
     - https://neocities.org/dashboard?dir=fonts
 - Github Pages:
@@ -26,8 +27,50 @@ Fill all the pages
     - https://www.phptutorial.net/php-tutorial/php-contact-form/
     - https://www.geeksforgeeks.org/javascript/create-a-contact-form-using-html-css-javascript/
     - https://dev.to/mertcanyucel/how-to-create-a-simple-html-form-that-sends-you-an-email-1mbd
+- Resizing Better
+    - https://www.iamsajid.com/
+- Video Player
+    - https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Audio_and_video_delivery/Video_player_styling_basics
 
 
+
+## Draft 2
+### Color Palette:
+- Dominant Color (right now, black #000)
+    - Header, footer, some buttons
+- Secondary Color (right now, grey #505050)
+    - Accents, borders/outlines/shadows
+- Accent Color (right now, white #fff)
+    - Notifcations, alerts, callouts
+
+### Design Features:
+- Links
+    - Glow on hover
+- Buttons
+    - No fill
+    - Outside glow on hover
+    - Double shadow
+        - one close and dark
+        - one far and light
+
+### Website Outline:
+- Homepage
+    - Reel
+        - Button link to "listen more" under it — goes to music page
+    - Short bio
+        - Link "Read More" at end — goes to about
+        - Button link to "Contact me" — goes to contact
+- Music
+    - Gallery of music
+- About
+    - Longer bio
+    - Resume
+- Contact
+    - Contact thing
+
+
+
+## Draft 1
 ### Color Palette:
 - #0D160B Onyx
 - #E4007C Fuchsia Flame
