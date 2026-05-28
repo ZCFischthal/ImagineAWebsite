@@ -62,6 +62,8 @@ Fill all the pages
         - Button link to "Contact me" — goes to contact
 - Music
     - Gallery of music
+        - https://codepen.io/t_afif/pen/BabwVLx
+        - 
 - About
     - Longer bio
     - Resume
