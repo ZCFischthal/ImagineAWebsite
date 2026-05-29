@@ -165,6 +165,11 @@ input, textarea {
     font-size: 1rem;
     font-family: 'Times New Roman', Times, serif;
     background-color: var(--secondary);
+    color: var(--text-primary);
+}
+
+input:focus, textarea:focus {
+    border: ridge var(--text-primary);
 }
 
 .btn-primary {
