@@ -84,8 +84,8 @@ iframe {
     mix-blend-mode: screen;
 }
 .header {
-    /* background: var(--primary); */
-    mix-blend-mode: hard-light;
+    background: var(--secondary);
+    /* mix-blend-mode: hard-light; */
     color: var(--text-primary);
     top: 0;
     display: block;
