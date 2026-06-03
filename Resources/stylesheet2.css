@@ -77,15 +77,15 @@ iframe {
 
 /* HEADER */
 .headerImage {
-    background: url("./Photos/arcade_carpet_3_512.png"), var(--primary);
+    background: url("./Photos/arcade_carpet_3_512.png"), var(--secondary);
     display: block;
     overflow: hidden;
     position: sticky;
     mix-blend-mode: screen;
 }
 .header {
-    background: var(--secondary);
-    /* mix-blend-mode: hard-light; */
+    background: var(--primary);
+    mix-blend-mode: hard-light;
     color: var(--text-primary);
     top: 0;
     display: block;
